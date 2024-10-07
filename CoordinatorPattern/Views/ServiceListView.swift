@@ -46,6 +46,8 @@ struct ServiceListView: View {
                 .tint(.black)
             }
         }
+        .scrollContentBackground(.hidden)
+        .background(Color.indigo.opacity(1))
         .navigationTitle("Streaming List")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
