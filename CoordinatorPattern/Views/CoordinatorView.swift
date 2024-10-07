@@ -11,7 +11,7 @@ struct CoordinatorView: View {
     @State var appCoordinator = AppCoordinator()
 
     init() {
-        setupNavigationBarAppearance()
+       setupNavigationBarAppearance()
     }
 
     var body: some View {
