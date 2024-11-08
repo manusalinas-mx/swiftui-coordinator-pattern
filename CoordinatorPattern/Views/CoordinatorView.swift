@@ -22,7 +22,7 @@ struct CoordinatorView: View {
                 }
                 .sheet(item: $appCoordinator.sheet) { sheet in
                     appCoordinator.build(sheet)
-                        .presentationDetents([.large])
+                        .presentationDetents([.medium, .large])
                         .presentationCornerRadius(20)
                         .presentationDragIndicator(.visible)
                 }
