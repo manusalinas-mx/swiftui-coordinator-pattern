@@ -15,11 +15,11 @@ struct ContentCardView<T: View>: View {
         VStack {
             content()
         }
-        .padding()
+        .padding(.all, 1)
         .frame(maxWidth: .infinity)
         .background(.white)
-        .cornerRadius(15)
-        .shadow(color: .gray, radius: 3, x: 2, y: 2)
+        .cornerRadius(10)
+        .shadow(color: .gray, radius: 1, x: 1, y: 0.5)
         .scrollTransition { content, phase in
             content
                 .scaleEffect(phase.isIdentity ? 1 : 0.9)
